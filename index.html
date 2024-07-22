@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Channel 5 News</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+        background-color: #f4f4f4;
+        color: #333;
+      }
+      .container {
+        position: relative;
+        width: 100%;
+        height: 90vh;
+        background: linear-gradient(
+            45deg,
+            rgba(101, 1, 182, 0.4),
+            rgba(8, 1, 112, 0.9)
+          ),
+          url("CHANNEL 5 NEWS.png");
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        color: #fff;
+        text-align: center;
+      }
+      .container::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 250px;
+        background: #fff;
+        clip-path: polygon(100% 50%, 0 100%, 100% 100%);
+        margin-bottom: -1px;
+      }
+      .content {
+        width: 90%;
+        max-width: 900px;
+        padding: 0 20px;
+        position: relative;
+      }
+      .content h2 {
+        margin: 0;
+        padding: 0;
+        font-size: 4rem;
+      }
+      .content p {
+        font-size: 1.25rem;
+      }
+      .about {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        width: 80%;
+        margin: 0 auto;
+        padding: 70px 0;
+        background: #fff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+      }
+      .about h2 span {
+        background-color: red;
+        color: #fff;
+        padding: 0 5px;
+      }
+      .about h2 {
+        font-size: 2em;
+        margin-bottom: 20px;
+        width: 100%;
+        text-align: center;
+      }
+      .about img {
+        padding: 10px;
+        width: 35%;
+        margin-right: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+      .about p {
+        padding: 10px;
+        width: 50%;
+        font-size: 1.2em;
+        line-height: 1.6;
+      }
+      .breaking,
+      .other-news {
+        padding: 20px;
+        text-align: center;
+        color: #333;
+        background: #fff;
+        margin: 20px 0;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+      }
+      .breaking h2 {
+        margin: 0;
+        font-size: 2rem;
+        padding: 20px 0;
+      }
+      .breaking img {
+        width: 45%;
+        height: auto;
+        border-radius: 10px;
+        margin-bottom: 20px;
+      }
+      .breaking p {
+        font-size: 1.25rem;
+        margin: 0 auto;
+        max-width: 800px;
+      }
+
+      .other-news h2 {
+        font-size: 2rem;
+        padding: 20px 0;
+      }
+
+      .other-news .story {
+        margin: 20px auto;
+        max-width: 600px;
+        text-align: left;
+        padding: 20px;
+        background: #f9f9f9;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      .other-news .story h3 {
+        font-size: 1.5rem;
+        margin: 10px 0;
+      }
+
+      .other-news .story p {
+        font-size: 1rem;
+        line-height: 1.6;
+      }
+
+      @media screen and (max-width: 576px) {
+        .content h2 {
+          font-size: 2.5rem;
+        }
+        .content p {
+          font-size: 1rem;
+        }
+        .about {
+          flex-direction: column;
+          align-items: flex-start;
+          padding: 20px;
+        }
+        .about img,
+        .about p {
+          width: 100%;
+          margin: 0;
+        }
+        .about img {
+          width: 35%;
+          margin-bottom: 20px;
+        }
+      }
+
+      footer {
+        background-color: purple;
+        color: #fff;
+        padding: 20px 0;
+        text-align: center;
+        margin-top: 20px;
+      }
+
+      footer .footer_container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      footer .social-media a {
+        color: #fff;
+        margin: 0 10px;
+        text-decoration: none;
+        font-size: 1.25rem;
+      }
+
+      footer .social-media a:hover {
+        color: lightgray;
+      }
+
+      footer .copyright {
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="container">
+      <div class="content">
+        <h2>Breaking News</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita at
+          iste tempore beatae animi incidunt, ut vitae eligendi laboriosam
+          iusto, nisi fuga eos dolores, earum sunt necessitatibus cumque porro
+          deserunt. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Mollitia quis quia soluta impedit sint temporibus reiciendis ipsa
+          provident! Laboriosam saepe repudiandae laudantium aut atque aliquam
+          velit, delectus ad magnam enim.
+        </p>
+      </div>
+    </section>
+    <section class="about">
+      <h2>
+        <span>EXCLUSIVE</span>
+        Camilla behind closed doors: Her worrying days with Charles after his
+        cancer diagnosis and the eternal optimism that has made the King
+        'sweetly proud': LINDA MASEKO
+      </h2>
+      <img src="Yellow Tape.png" alt="Camilla" />
+      <p>
+        She might have hoped her birthday tomorrow would involve nothing more
+        taxing than putting her feet up with her husband. Instead,
+        <span>Queen Camilla</span> will celebrate turning 77 by popping on her
+        Bruce Oldfield gown and the family`s iconic Diamond Diadem to accompany
+        <span>King Charles</span> to the State Opening of Parliament. `It`s not
+        the tip-top way she would choose to be spending her birthday,` one close
+        friend tells me, `but you won`t ever hear a single word of complaint.
+        About anything, really. For someone who wasn`t born into the
+        <span>Royal Family</span>, she`s got an extraordinarily strong sense of
+        duty and the temperament to cope.`
+      </p>
+      <p>
+        Indeed, that`s something I`ve witnessed first-hand many times over the
+        years, particularly at the end of a long day on tour - a smile, a
+        cheekily raised eyebrow and a look that says: `Well, let`s get on with
+        the show. It`s been an incredibly tough year for Her Majesty. After the
+        whirlwind of her husband`s accession and coronation last year, 2024
+        should have been a time for Their Majesties to catch their breath and
+        get back into the regular groove of royal life.
+      </p>
+    </section>
+
+    <section class="breaking">
+      <h2><span>Top Stories</span></h2>
+      <a href="#"
+        ><img src="felix-mooneeram-evlkOfkQ5rE-unsplash.jpg" alt="story1"
+      /></a>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab asperiores
+        officiis enim autem ipsam necessitatibus corporis facilis inventore
+        vitae voluptas amet hic eveniet sed sequi architecto, cumque veniam
+        nobis consectetur?
+      </p>
+    </section>
+    <section class="other-news">
+      <h2>In Other News</h2>
+      <div class="story">
+        <h3><a href="#">Story 1</a></h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi a
+          architecto numquam saepe magni quas accusantium, in, omnis inventore
+          vel veritatis cum illo, ab sequi! Debitis hic vero facere dignissimos?
+        </p>
+      </div>
+      <div class="story">
+        <h3><a href="#">Story 2</a></h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi a
+          architecto numquam saepe magni quas accusantium, in, omnis inventore
+          vel veritatis cum illo, ab sequi! Debitis hic vero facere dignissimos?
+        </p>
+      </div>
+      <div class="story">
+        <h3><a href="#">Story 3</a></h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi a
+          architecto numquam saepe magni quas accusantium, in, omnis inventore
+          vel veritatis cum illo, ab sequi! Debitis hic vero facere dignissimos?
+        </p>
+      </div>
+    </section>
+    <footer>
+      <div class="footer_container">
+        <div class="social-media">
+          <a href="http://www.facebook.com/" target="_blank"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a href="http://www.twitter.com/" target="_blank"
+            ><i class="fab fa-twitter"></i
+          ></a>
+          <a href="http://www.instagram.com/" target="_blank"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a href="http://www.linkedin.com/" target="_blank"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+        </div>
+        <div class="copyright">
+          &copy;
+          <script>
+            document.write(new Date().getFullYear());
+          </script>
+          Channel 5 News All Rights Reserved.
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
